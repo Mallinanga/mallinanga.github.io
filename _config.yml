@@ -1,0 +1,33 @@
+title: Testing
+description: Remember the old saying. Cry once when you buy it or cry every time you use it.﻿
+# url: 'https://mallinanga.github.io'
+# baseurl: /nanga-forestry
+
+permalink: pretty
+timezone: Europe/Athens
+sass:
+  style: compressed
+
+collections:
+  snippets:
+    output: true
+  cookies:
+  books:
+    output: true
+  services:
+    output: true
+  locations:
+  experiences:
+    output: true
+
+prose:
+  media: 'media'
+  ignore:
+    - /_includes
+    - /_layouts
+    - _config.yml
+
+gems:
+  - jekyll-menus
+  - jekyll-seo-tag
+  - jekyll-sitemap
