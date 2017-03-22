@@ -6,7 +6,7 @@
         if (header) {
             scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
             //header.classList.toggle('header-background', scrollTop >= 50 || document.body.classList.contains('nav-open'));
-            header.classList.toggle('header--scrolled', scrollTop >= 50);
+            header.classList.toggle('header--scrolled', scrollTop >= $('#content')[0].offsetTop);
         }
     }
 
