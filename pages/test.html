@@ -1,0 +1,14 @@
+---
+layout: default
+title: Test
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+permalink: /test/
+---
+{% include hero.html %}
+<section id="content">
+    <div class="container container--items">
+        {% for item in site.snippets %}
+        {% include teases/tease.html %}
+        {% endfor %}
+    </div>
+</section>

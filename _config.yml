@@ -29,6 +29,7 @@ defaults:
         type: "books"
     values:
         layout: "book"
+        class: "book"
         image: "/media/sample.jpg"
         categories: []
         description: ""
@@ -37,6 +38,7 @@ defaults:
         type: "cookies"
     values:
         layout: "cookie"
+        class: "cookie"
         description: ""
         image: "/media/sample.jpg"
   - scope:
@@ -44,6 +46,7 @@ defaults:
         type: "experiences"
     values:
         layout: "experience"
+        class: "experience"
         description: ""
         image: "http://source.unsplash.com/weekly"
   - scope:
@@ -51,6 +54,7 @@ defaults:
         type: "locations"
     values:
         layout: "location"
+        class: "location"
         description: ""
         image: "/media/sample.jpg"
         latitude: ""
@@ -60,6 +64,7 @@ defaults:
         type: "services"
     values:
         layout: "service"
+        class: "service"
         description: ""
         image: "/media/sample.jpg"
   - scope:
@@ -67,6 +72,7 @@ defaults:
         type: "snippets"
     values:
         layout: "snippet"
+        class: "snippet"
         description: ""
         image: "/media/sample.jpg"
 

@@ -1,0 +1,16 @@
+---
+layout: default
+title: Cookies
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+permalink: /cookies/
+---
+{% include hero.html %}
+<section id="content">
+    {% if site.cookies.size != 0 %}
+    <div class="container container--cookies">
+        {% for item in site.cookies %}
+        {% include teases/tease.html %}
+        {% endfor %}
+    </div>
+    {% endif %}
+</section>

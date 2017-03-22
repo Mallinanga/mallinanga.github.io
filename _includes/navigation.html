@@ -18,37 +18,37 @@
         <li>
             <a href="/" title="Home">Home</a>
         </li>
-        {% for post in site.books limit: 1 %}
+        {% for post in site.books limit: 2 %}
         <li>
             <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
         </li>
         {% endfor %}
-        {% for post in site.cookies limit: 1 %}
+        {% for post in site.cookies limit: 2 %}
         <li>
             <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
         </li>
         {% endfor %}
-        {% for post in site.experiences limit: 1 %}
+        {% for post in site.experiences limit: 2 %}
         <li>
             <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
         </li>
         {% endfor %}
-        {% for post in site.locations limit: 1 %}
+        {% for post in site.locations limit: 2 %}
         <li>
             <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
         </li>
         {% endfor %}
-        {% for post in site.posts limit: 1 %}
+        {% for post in site.posts limit: 2 %}
         <li>
             <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
         </li>
         {% endfor %}
-        {% for post in site.services limit: 1 %}
+        {% for post in site.services limit: 2 %}
         <li>
             <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
         </li>
         {% endfor %}
-        {% for post in site.snippets limit: 1 %}
+        {% for post in site.snippets limit: 2 %}
         <li>
             <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
         </li>

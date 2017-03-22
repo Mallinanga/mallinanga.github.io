@@ -1,0 +1,16 @@
+---
+layout: default
+title: Experiences
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+permalink: /experiences/
+---
+{% include hero.html %}
+<section id="content">
+    {% if site.experiences.size != 0 %}
+    <div class="container container--experiences">
+        {% for item in site.experiences %}
+        {% include teases/tease.html %}
+        {% endfor %}
+    </div>
+    {% endif %}
+</section>

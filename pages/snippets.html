@@ -1,0 +1,16 @@
+---
+layout: default
+title: Snippets
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+permalink: /snippets/
+---
+{% include hero.html %}
+<section id="content">
+    {% if site.snippets.size != 0 %}
+    <div class="container container--snippets">
+        {% for item in site.snippets %}
+        {% include teases/tease.html %}
+        {% endfor %}
+    </div>
+    {% endif %}
+</section>

@@ -1,0 +1,16 @@
+---
+layout: default
+title: Books
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+permalink: /books/
+---
+{% include hero.html %}
+<section id="content">
+    {% if site.books.size != 0 %}
+    <div class="container container--books">
+        {% for item in site.books %}
+        {% include teases/tease.html %}
+        {% endfor %}
+    </div>
+    {% endif %}
+</section>

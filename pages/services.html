@@ -1,0 +1,16 @@
+---
+layout: default
+title: Services
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+permalink: /services/
+---
+{% include hero.html %}
+<section id="content">
+    {% if site.services.size != 0 %}
+    <div class="container container--services">
+        {% for item in site.services %}
+        {% include teases/tease.html %}
+        {% endfor %}
+    </div>
+    {% endif %}
+</section>
