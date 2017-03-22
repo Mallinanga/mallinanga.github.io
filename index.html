@@ -5,7 +5,37 @@ title: Hello
 <section class="hero" style="background-image:url('https://source.unsplash.com/category/nature/daily');">
     <div class="container">
         <h1>Hello</h1>
-        {% for post in site.posts limit: 3 %}
+        {% for post in site.books limit: 1 %}
+        <article class="">
+            <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+        </article>
+        {% endfor %}
+        {% for post in site.cookies limit: 1 %}
+        <article class="">
+            <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+        </article>
+        {% endfor %}
+        {% for post in site.experiences limit: 1 %}
+        <article class="">
+            <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+        </article>
+        {% endfor %}
+        {% for post in site.locations limit: 1 %}
+        <article class="">
+            <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+        </article>
+        {% endfor %}
+        {% for post in site.posts limit: 1 %}
+        <article class="">
+            <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+        </article>
+        {% endfor %}
+        {% for post in site.services limit: 1 %}
+        <article class="">
+            <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+        </article>
+        {% endfor %}
+        {% for post in site.snippets limit: 1 %}
         <article class="">
             <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
         </article>
