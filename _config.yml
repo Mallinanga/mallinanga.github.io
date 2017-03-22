@@ -22,7 +22,8 @@ collections:
 
 defaults:
   - scope:
-        path: "_books"
+        path: ""
+        type: books
     values:
         image: ""
         categories: []
