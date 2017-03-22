@@ -23,9 +23,9 @@ collections:
 defaults:
   - scope:
         path: ""
-        type: books
+        type: "books"
     values:
-        layout: "default"
+        layout: "book"
         image: ""
         categories: []
         description: ""
