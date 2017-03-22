@@ -87,3 +87,10 @@ gems:
   - jekyll-menus
   - jekyll-seo-tag
   - jekyll-sitemap
+
+exclude:
+  - 'Gemfile'
+  - 'Gemfile.lock'
+  - 'node_modules'
+  - 's3_website.yml'
+  - 'vendor'
