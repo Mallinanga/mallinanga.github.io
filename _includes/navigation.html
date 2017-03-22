@@ -1,29 +1,57 @@
+{% if site.data.navigation %}
 <nav>
     {% for link in site.data.navigation %}
-        {% assign class = "" %}
-        {% if link.highlight %}
-            {% assign class = class | append: " highlight" %}
-        {% endif %}
-        {% if link.link == page.url %}
-            {% assign class = class | append: " active" %}
-        {% endif %}
-        <a href="{{ link.link }}" class="{{ class }}">{{ link.name }}</a>
+    {% assign class = "" %}
+    {% if link.highlight %}
+    {% assign class = class | append: " highlight" %}
+    {% endif %}
+    {% if link.link == page.url %}
+    {% assign class = class | append: " active" %}
+    {% endif %}
+    <a href="{{ link.link }}" class="{{ class }}">{{ link.name }}</a>
     {% endfor %}
 </nav>
+{% endif %}
+<div class="menu__toggle"></div>
 <div class="menu">
-    <div class="menu__close"></div>
     <ul>
-        {% for link in site.data.navigation %}
-            {% assign class = "" %}
-            {% if link.highlight %}
-                {% assign class = class | append: " highlight" %}
-            {% endif %}
-            {% if link.link == page.url %}
-                {% assign class = class | append: " active" %}
-            {% endif %}
-            <li>
-                <a href="{{ link.link }}" class="{{ class }}">{{ link.name }}</a>
-            </li>
+        <li>
+            <a href="/" title="Home">Home</a>
+        </li>
+        {% for post in site.books limit: 1 %}
+        <li>
+            <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+        {% for post in site.cookies limit: 1 %}
+        <li>
+            <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+        {% for post in site.experiences limit: 1 %}
+        <li>
+            <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+        {% for post in site.locations limit: 1 %}
+        <li>
+            <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+        {% for post in site.posts limit: 1 %}
+        <li>
+            <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+        {% for post in site.services limit: 1 %}
+        <li>
+            <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+        {% for post in site.snippets limit: 1 %}
+        <li>
+            <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+        </li>
         {% endfor %}
     </ul>
 </div>

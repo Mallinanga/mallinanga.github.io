@@ -6,7 +6,7 @@
         if (header) {
             scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
             //header.classList.toggle('header-background', scrollTop >= 50 || document.body.classList.contains('nav-open'));
-            header.classList.toggle('header--scrolled', scrollTop >= $('#content')[0].offsetTop);
+            header.classList.toggle('header--scrolled', scrollTop >= ($('#content')[0].offsetTop - 50));
         }
     }
 
@@ -32,5 +32,8 @@ var loadScripts = function () {
     var footer = $('footer');
     $('body').css('opacity', '1');
     //$('#content').css('margin-bottom', footer.outerHeight());
+    $('.menu__toggle').on('click', function () {
+        $('.menu').toggleClass('is-showing');
+    });
 };
 window.addEventListener('load', loadScripts);

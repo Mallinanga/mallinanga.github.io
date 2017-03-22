@@ -5,42 +5,8 @@ image: https://source.unsplash.com/daily
 ---
 <section class="hero" style="background-image:url('{{ page.image }}');">
     <div class="container">
-        <h1>Hello</h1>
-        {% for post in site.books limit: 1 %}
-        <article class="">
-            <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </article>
-        {% endfor %}
-        {% for post in site.cookies limit: 1 %}
-        <article class="">
-            <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </article>
-        {% endfor %}
-        {% for post in site.experiences limit: 1 %}
-        <article class="">
-            <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </article>
-        {% endfor %}
-        {% for post in site.locations limit: 1 %}
-        <article class="">
-            <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </article>
-        {% endfor %}
-        {% for post in site.posts limit: 1 %}
-        <article class="">
-            <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </article>
-        {% endfor %}
-        {% for post in site.services limit: 1 %}
-        <article class="">
-            <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </article>
-        {% endfor %}
-        {% for post in site.snippets limit: 1 %}
-        <article class="">
-            <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </article>
-        {% endfor %}
+        <h1 class="hero__title">{{ page.title }}</h1>
+        <p class="hero__subtitle">{{ page.description }}</p>
     </div>
 </section>
 <section id="content"></section>

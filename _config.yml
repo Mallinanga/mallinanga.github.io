@@ -5,7 +5,7 @@ description: Remember the old saying. Cry once when you buy it or cry every time
 
 permalink: pretty
 timezone: Europe/Athens
-verbose: true
+verbose: false
 sass:
   style: compressed
 
