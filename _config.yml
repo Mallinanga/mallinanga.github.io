@@ -25,6 +25,7 @@ defaults:
         path: ""
         type: books
     values:
+        layout: "default"
         image: ""
         categories: []
         description: ""
