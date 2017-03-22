@@ -29,6 +29,12 @@ defaults:
         image: ""
         categories: []
         description: ""
+  - scope:
+        path: ""
+        type: "experiences"
+    values:
+        layout: "default"
+        image: "http://source.unsplash.com/weekly"
 
 prose:
   media: 'media'
