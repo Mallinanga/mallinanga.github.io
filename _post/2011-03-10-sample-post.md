@@ -1,17 +1,14 @@
 ---
 layout: post
 title: Sample Post
-description: 'Just about everything you''ll need to style in the theme: headings,
-  paragraphs, blockquotes, tables, code blocks, and more.'
+description: Lorem
 modified: '2013-05-31'
 tags: 
-image:
-  feature: so-simple-sample-image-1.jpg
+image: so-simple-sample-image-1.jpg
 comments: false
 categories: 
 date: '2011-03-10T00:00:00.000+00:00'
 ---
-
 Below is just about everything you'll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
 
 # Heading 1
