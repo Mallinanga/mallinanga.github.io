@@ -37,30 +37,37 @@ defaults:
         type: "cookies"
     values:
         layout: "cookie"
+        description: ""
         image: "/media/sample.jpg"
   - scope:
         path: ""
         type: "experiences"
     values:
         layout: "experience"
+        description: ""
         image: "http://source.unsplash.com/weekly"
   - scope:
         path: ""
         type: "locations"
     values:
         layout: "location"
+        description: ""
         image: "/media/sample.jpg"
+        latitude: ""
+        longitude: ""
   - scope:
         path: ""
         type: "services"
     values:
         layout: "service"
+        description: ""
         image: "/media/sample.jpg"
   - scope:
         path: ""
         type: "snippets"
     values:
         layout: "snippet"
+        description: ""
         image: "/media/sample.jpg"
 
 prose:
@@ -72,5 +79,5 @@ prose:
 
 gems:
   - jekyll-menus
-  # - jekyll-seo-tag
+  - jekyll-seo-tag
   - jekyll-sitemap
