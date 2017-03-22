@@ -1,2 +1,7 @@
 .idea/
+.jekyll-metadata
 .sass-cache/
+.vscode/
+_site/
+node_modules/
+s3_website.yml

@@ -5,19 +5,22 @@ description: Remember the old saying. Cry once when you buy it or cry every time
 
 permalink: pretty
 timezone: Europe/Athens
+verbose: true
 sass:
   style: compressed
 
 collections:
-  snippets:
+  books:
     output: true
   cookies:
-  books:
+    output: true
+  experiences:
+    output: true
+  locations:
     output: true
   services:
     output: true
-  locations:
-  experiences:
+  snippets:
     output: true
 
 defaults:
@@ -26,15 +29,39 @@ defaults:
         type: "books"
     values:
         layout: "book"
-        image: ""
+        image: "/media/sample.jpg"
         categories: []
         description: ""
   - scope:
         path: ""
+        type: "cookies"
+    values:
+        layout: "cookie"
+        image: "/media/sample.jpg"
+  - scope:
+        path: ""
         type: "experiences"
     values:
-        layout: "default"
+        layout: "experience"
         image: "http://source.unsplash.com/weekly"
+  - scope:
+        path: ""
+        type: "locations"
+    values:
+        layout: "location"
+        image: "/media/sample.jpg"
+  - scope:
+        path: ""
+        type: "services"
+    values:
+        layout: "service"
+        image: "/media/sample.jpg"
+  - scope:
+        path: ""
+        type: "snippets"
+    values:
+        layout: "snippet"
+        image: "/media/sample.jpg"
 
 prose:
   media: 'media'
@@ -45,5 +72,5 @@ prose:
 
 gems:
   - jekyll-menus
-  - jekyll-seo-tag
+  # - jekyll-seo-tag
   - jekyll-sitemap

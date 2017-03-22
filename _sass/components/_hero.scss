@@ -1,5 +1,5 @@
 .hero {
-  -webkit-filter: grayscale(1);
+  //-webkit-filter: grayscale(1);
   align-items: flex-end;
   background-color: $white;
   background-position: center;
@@ -14,11 +14,21 @@
   right: 0;
   top: 0;
   z-index: 1;
+  &:before {
+    background-color: rgba(19, 19, 23, 0.60);
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
   .container {
     margin: 0 auto;
     max-width: 1200px;
     padding-bottom: 5em;
     width: 100%;
+    z-index: 1;
     > * {
       max-width: 45%;
     }

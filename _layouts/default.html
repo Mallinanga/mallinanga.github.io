@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    {% include errorception.html %}
+    {% if jekyll.environment == "production" %}{% include errorception.html %}{% endif %}
     <link rel="stylesheet" href="{{ site.baseurl }}{{ '/assets/css/style.css?v=' | append: site.github.build_revision }}">
-    {% seo %}
+    {% comment %}{% seo %}{% endcomment %}
 </head>
 <body>
 <div id="app">
@@ -18,10 +18,11 @@
         <div class="header__menu"></div>
     </header>
     {{ content }}
+    {% include footer.html %}
 </div>
 <script src="//cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.6/SmoothScroll.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/1.0.0/lunr.min.js"></script> -->
+{% comment %}<script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/1.0.0/lunr.min.js"></script>{% endcomment %}
 <script src="{{ site.baseurl }}/assets/js/app.js?v={{ site.github.build_revision }}"></script>
 </body>
 </html>

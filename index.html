@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Hello
+image: https://source.unsplash.com/daily
 ---
-<section class="hero" style="background-image:url('https://source.unsplash.com/category/nature/daily');">
+<section class="hero" style="background-image:url('{{ page.image }}');">
     <div class="container">
         <h1>Hello</h1>
         {% for post in site.books limit: 1 %}
@@ -41,5 +42,5 @@ title: Hello
         </article>
         {% endfor %}
     </div>
- </section>
- <section id="content"></section>
+</section>
+<section id="content"></section>
