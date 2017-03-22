@@ -20,6 +20,14 @@ collections:
   experiences:
     output: true
 
+defaults:
+  - scope:
+        path: "_books"
+    values:
+        image: ""
+        categories: []
+        description: ""
+
 prose:
   media: 'media'
   ignore:
