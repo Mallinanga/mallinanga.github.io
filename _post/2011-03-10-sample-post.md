@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Sample Post
 description: Lorem
 modified: '2013-05-31'
